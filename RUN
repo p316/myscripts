@@ -1,0 +1,3 @@
+#!/bin/sh
+
+$JAVA_HOME/bin/java -jar *.jar > ./$(basename $(pwd)).log 2>&1 &

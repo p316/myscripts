@@ -1,0 +1,7 @@
+- name: Server restarting
+  become: yes
+  become_user: "{{ app_user }}"
+  hosts: all
+#  serial: 1
+  roles:
+    - server_restart
